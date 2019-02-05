@@ -21,3 +21,9 @@ jwt {
     allow IC-Garske true
     publickey /public_key.pem
 }
+
+jwt {
+    path /test-group
+    allow test-group true
+    publickey /public_key.pem
+}
