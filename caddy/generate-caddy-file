@@ -23,7 +23,7 @@ groups = ["test-group",
 
 jwt_block_template = """
 jwt {
-    path /${name}
+    path /model-review/2019/${name}
     allow ${name} true
     publickey /public_key.pem
 }

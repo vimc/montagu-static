@@ -17,7 +17,7 @@ docker pull docker.montagu.dide.ic.ac.uk:5000/montagu-static-reverse-proxy:${GIT
 docker-compose up --force-recreate
 ```
 
-Open http://localhost:80/model-review/test-group and you should get a `401 Unauthorized` error - 
+Open http://localhost:80/model-review/2019/test-group and you should get a `401 Unauthorized` error - 
 the page is protected by caddy's jwt validation.
 
 Now open the browser console and set a cookie by
@@ -26,7 +26,7 @@ document.cookies="jwt_token=eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXIiLCJpc3M
 ```
 
 This sets a cookie that caddy can validate with the public key that is mounted into the container. 
-Now going to http://localhost:80/model-review/test-group should give you a regular 404.
+Now going to http://localhost:80/model-review/2019/test-group should give you a regular 404.
 
 At this point nginx is passing the request to caddy, who is validating the jwt.
 
