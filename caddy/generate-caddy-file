@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+from mako.template import Template
+from os import chdir
+from os.path import dirname, realpath
+
+groups = ["test-group",
+          "Cambridge-Trotter",
+          "CDA-Razavi",
+          "JHU-Lessler",
+          "LSHTM-Clark",
+          "LSHTM-Jit",
+          "UND-Moore",
+          "UND-Perkins",
+          "Emory-Lopman",
+          "Harvard-Sweet",
+          "IC-Garske",
+          "IC-Hallett",
+          "JHU-Tam",
+          "KPW-Jackson",
+          "OUCRU-Clapham",
+          "PHE-Vynnycky",
+          "PSU-Ferrari"]
+
+jwt_block_template = """
+jwt {
+    path /${name}
+    allow ${name} true
+    publickey /public_key.pem
+}
+"""
+
+
+def generate_caddyfile(template_path, target_path):
+    print("Templating from {} to {}".format(template_path, target_path))
+    with open(template_path, 'r') as f:
+        template = Template(f.read())
+    jwt_rules = ""
+    for g in groups:
+        jwt_block = Template(jwt_block_template).render(name=g)
+        jwt_rules += jwt_block
+    with open(target_path, 'w') as f:
+        f.write(template.render(jwt_rules=jwt_rules))
+
+
+if __name__ == "__main__":
+    # Set working directory to this script's dir
+    chdir(dirname(realpath(__file__)))
+    generate_caddyfile("Caddyfile.template", "Caddyfile")

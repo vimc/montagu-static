@@ -29,3 +29,6 @@ This sets a cookie that caddy can validate with the public key that is mounted i
 Now going to http://localhost:80/model-review/test-group should give you a regular 404.
 
 At this point nginx is passing the request to caddy, who is validating the jwt.
+
+## Caddyfile
+This is generated from the template `caddy/Caddyfile.template` by the script `caddy/generate-caddy-file`

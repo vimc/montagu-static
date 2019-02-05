@@ -9,7 +9,6 @@ log    /var/log/caddy_log.log
 root /www/
 browse
 
-# Secure with webtoken
 
 jwt {
     path /test-group
@@ -112,3 +111,4 @@ jwt {
     allow PSU-Ferrari true
     publickey /public_key.pem
 }
+
