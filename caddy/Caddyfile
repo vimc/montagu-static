@@ -10,9 +10,64 @@ root /www/model-review/2019/
 browse
 
 # Secure with webtoken
+
+jwt {
+    path /test-group
+    allow test-group true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /Cambridge-Trotter
+    allow Cambridge-Trotter true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /CDA-Razavi
+    allow CDA-Razavi true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /JHU-Lessler
+    allow JHU-Lessler true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /LSHTM-Clark
+    allow LSHTM-Clark true
+    publickey /public_key.pem
+}
+
 jwt {
     path /LSHTM-Jit
     allow LSHTM-Jit true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /UND-Moore
+    allow UND-Moore true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /UND-Perkins
+    allow UND-Perkins true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /Emory-Lopman
+    allow Emory-Lopman true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /Harvard-Sweet
+    allow Harvard-Sweet true
     publickey /public_key.pem
 }
 
@@ -23,7 +78,37 @@ jwt {
 }
 
 jwt {
-    path /test-group
-    allow test-group true
+    path /IC-Hallett
+    allow IC-Hallett true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /JHU-Tam
+    allow JHU-Tam true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /KPW-Jackson
+    allow KPW-Jackson true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /OUCRU-Clapham
+    allow OUCRU-Clapham true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /PHE-Vynnycky
+    allow PHE-Vynnycky true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /PSU-Ferrari
+    allow PSU-Ferrari true
     publickey /public_key.pem
 }
