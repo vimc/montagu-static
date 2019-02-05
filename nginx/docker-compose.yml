@@ -1,0 +1,13 @@
+version: '2'
+services:
+  static:
+    image: docker.montagu.dide.ic.ac.uk:5000/montagu-static-proxy:${GIT_BRANCH_TAG}
+    volumes:
+      - ./public_key.pem:/public_key.pem
+      - static_volume:/www/model-review/2019
+  proxy:
+    image: docker.montagu.dide.ic.ac.uk:5000/montagu-static-reverse-proxy:${GIT_BRANCH_TAG}
+    ports:
+      - "80:80"
+volumes:
+  static_volume:
