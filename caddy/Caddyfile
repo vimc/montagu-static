@@ -1,3 +1,4 @@
+:80
 gzip
 tls off
 
@@ -9,6 +10,12 @@ root /www/model-review/2019/
 browse
 
 # Secure with webtoken
+jwt {
+    path /LSHTM-Jit
+    allow LSHTM-Jit true
+    publickey /public_key.pem
+}
+
 jwt {
     path /IC-Garske
     allow IC-Garske true
