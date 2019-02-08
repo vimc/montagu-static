@@ -17,103 +17,103 @@ jwt {
 
 
 jwt {
-    path /model-review/2019/test-group
+    path /model-documentation/2019/test-group
     allow test-group true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/Cambridge-Trotter
+    path /model-documentation/2019/Cambridge-Trotter
     allow Cambridge-Trotter true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/CDA-Razavi
+    path /model-documentation/2019/CDA-Razavi
     allow CDA-Razavi true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/JHU-Lessler
+    path /model-documentation/2019/JHU-Lessler
     allow JHU-Lessler true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/LSHTM-Clark
+    path /model-documentation/2019/LSHTM-Clark
     allow LSHTM-Clark true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/LSHTM-Jit
+    path /model-documentation/2019/LSHTM-Jit
     allow LSHTM-Jit true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/UND-Moore
+    path /model-documentation/2019/UND-Moore
     allow UND-Moore true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/UND-Perkins
+    path /model-documentation/2019/UND-Perkins
     allow UND-Perkins true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/Emory-Lopman
+    path /model-documentation/2019/Emory-Lopman
     allow Emory-Lopman true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/Harvard-Sweet
+    path /model-documentation/2019/Harvard-Sweet
     allow Harvard-Sweet true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/IC-Garske
+    path /model-documentation/2019/IC-Garske
     allow IC-Garske true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/IC-Hallett
+    path /model-documentation/2019/IC-Hallett
     allow IC-Hallett true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/JHU-Tam
+    path /model-documentation/2019/JHU-Tam
     allow JHU-Tam true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/KPW-Jackson
+    path /model-documentation/2019/KPW-Jackson
     allow KPW-Jackson true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/OUCRU-Clapham
+    path /model-documentation/2019/OUCRU-Clapham
     allow OUCRU-Clapham true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/PHE-Vynnycky
+    path /model-documentation/2019/PHE-Vynnycky
     allow PHE-Vynnycky true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-review/2019/PSU-Ferrari
+    path /model-documentation/2019/PSU-Ferrari
     allow PSU-Ferrari true
     publickey /public_key.pem
 }
