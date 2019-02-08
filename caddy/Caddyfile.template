@@ -9,4 +9,10 @@ log    /var/log/caddy_log.log
 root /www/
 browse
 
+jwt {
+    path /
+    allow access_level admin
+    publickey /public_key.pem
+}
+
 ${jwt_rules}
