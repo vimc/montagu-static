@@ -118,3 +118,73 @@ jwt {
     publickey /public_key.pem
 }
 
+jwt {
+    path /estimate-comparison/201810/HepB
+    allow HepB reviewer
+    allow HepB member
+    publickey /public_key.pem
+}
+
+jwt {
+    path /estimate-comparison/201810/Hib
+    allow Hib reviewer
+    allow Hib member
+    publickey /public_key.pem
+}
+
+jwt {
+    path /estimate-comparison/201810/HPV
+    allow HPV reviewer
+    allow HPV member
+    publickey /public_key.pem
+}
+
+jwt {
+    path /estimate-comparison/201810/JE
+    allow JE reviewer
+    allow JE member
+    publickey /public_key.pem
+}
+
+jwt {
+    path /estimate-comparison/201810/Measles
+    allow Measles reviewer
+    allow Measles member
+    publickey /public_key.pem
+}
+
+jwt {
+    path /estimate-comparison/201810/MenA
+    allow MenA reviewer
+    allow MenA member
+    publickey /public_key.pem
+}
+
+jwt {
+    path /estimate-comparison/201810/PCV
+    allow PCV reviewer
+    allow PCV member
+    publickey /public_key.pem
+}
+
+jwt {
+    path /estimate-comparison/201810/Rota
+    allow Rota reviewer
+    allow Rota member
+    publickey /public_key.pem
+}
+
+jwt {
+    path /estimate-comparison/201810/Rubella
+    allow Rubella reviewer
+    allow Rubella member
+    publickey /public_key.pem
+}
+
+jwt {
+    path /estimate-comparison/201810/YF
+    allow YF reviewer
+    allow YF member
+    publickey /public_key.pem
+}
+
