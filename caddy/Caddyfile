@@ -95,8 +95,20 @@ jwt {
 }
 
 jwt {
+    path /model-documentation/2019/JHU-Tam-Rota
+    allow JHU-Tam-Rota true
+    publickey /public_key.pem
+}
+
+jwt {
     path /model-documentation/2019/KPW-Jackson
     allow KPW-Jackson true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /model-documentation/2019/Li
+    allow Li true
     publickey /public_key.pem
 }
 
