@@ -44,8 +44,7 @@ estimate_comparison_diseases = ["HepB",
 estimate_comparison_template = """
 jwt {
     path /estimate-comparison/201810/${name}
-    allow ${name} reviewer
-    allow ${name} member
+    allow ${name} true
     publickey /public_key.pem
 }
 """
