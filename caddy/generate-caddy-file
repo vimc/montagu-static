@@ -4,24 +4,26 @@ from os import chdir
 from os.path import dirname, realpath
 
 model_documentation_groups = ["test-group",
-                              "Cambridge-Trotter",
                               "CDA-Razavi",
-                              "JHU-Lessler",
-                              "LSHTM-Clark",
-                              "LSHTM-Jit",
-                              "UND-Moore",
-                              "UND-Perkins",
+                              "Cambridge-Trotter",
                               "Emory-Lopman",
                               "Harvard-Sweet",
                               "IC-Garske",
                               "IC-Hallett",
-                              "JHU-Tam",
+                              "JHU-Lessler",
+                              "JHU-Tam-Hib_PCV",
                               "JHU-Tam-Rota",
                               "KPW-Jackson",
+                              "LSHTM-Clark-Hib_PCV",
+                              "LSHTM-Clark-Rota",
+                              "LSHTM-Jit-HPV",
+                              "LSHTM-Jit-Measles",
                               "Li",
                               "OUCRU-Clapham",
                               "PHE-Vynnycky",
-                              "PSU-Ferrari"]
+                              "PSU-Ferrari",
+                              "UND-Moore",
+                              "UND-Perkins"]
 
 model_documentation_template = """
 jwt {

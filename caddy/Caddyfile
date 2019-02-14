@@ -23,44 +23,14 @@ jwt {
 }
 
 jwt {
-    path /model-documentation/2019/Cambridge-Trotter
-    allow Cambridge-Trotter true
-    publickey /public_key.pem
-}
-
-jwt {
     path /model-documentation/2019/CDA-Razavi
     allow CDA-Razavi true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/JHU-Lessler
-    allow JHU-Lessler true
-    publickey /public_key.pem
-}
-
-jwt {
-    path /model-documentation/2019/LSHTM-Clark
-    allow LSHTM-Clark true
-    publickey /public_key.pem
-}
-
-jwt {
-    path /model-documentation/2019/LSHTM-Jit
-    allow LSHTM-Jit true
-    publickey /public_key.pem
-}
-
-jwt {
-    path /model-documentation/2019/UND-Moore
-    allow UND-Moore true
-    publickey /public_key.pem
-}
-
-jwt {
-    path /model-documentation/2019/UND-Perkins
-    allow UND-Perkins true
+    path /model-documentation/2019/Cambridge-Trotter
+    allow Cambridge-Trotter true
     publickey /public_key.pem
 }
 
@@ -89,8 +59,14 @@ jwt {
 }
 
 jwt {
-    path /model-documentation/2019/JHU-Tam
-    allow JHU-Tam true
+    path /model-documentation/2019/JHU-Lessler
+    allow JHU-Lessler true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /model-documentation/2019/JHU-Tam-Hib_PCV
+    allow JHU-Tam-Hib_PCV true
     publickey /public_key.pem
 }
 
@@ -103,6 +79,30 @@ jwt {
 jwt {
     path /model-documentation/2019/KPW-Jackson
     allow KPW-Jackson true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /model-documentation/2019/LSHTM-Clark-Hib_PCV
+    allow LSHTM-Clark-Hib_PCV true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /model-documentation/2019/LSHTM-Clark-Rota
+    allow LSHTM-Clark-Rota true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /model-documentation/2019/LSHTM-Jit-HPV
+    allow LSHTM-Jit-HPV true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /model-documentation/2019/LSHTM-Jit-Measles
+    allow LSHTM-Jit-Measles true
     publickey /public_key.pem
 }
 
@@ -127,6 +127,18 @@ jwt {
 jwt {
     path /model-documentation/2019/PSU-Ferrari
     allow PSU-Ferrari true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /model-documentation/2019/UND-Moore
+    allow UND-Moore true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /model-documentation/2019/UND-Perkins
+    allow UND-Perkins true
     publickey /public_key.pem
 }
 
