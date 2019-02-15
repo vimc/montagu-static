@@ -50,7 +50,7 @@ def estimate_comparison_201810():
 
 jwt_template = """
 jwt {
-    path ${root}/${path}
+    path ${root}/${path}/
     allow ${claim} true
     publickey /public_key.pem
 }
