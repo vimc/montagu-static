@@ -17,175 +17,175 @@ jwt {
 
 
 jwt {
-    path model-documentation/2019/HPV-Harvard-Kim
+    path /model-documentation/2019/HPV-Harvard-Kim
     allow HPV true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/HPV-LSHTM-Jit
+    path /model-documentation/2019/HPV-LSHTM-Jit
     allow HPV true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/HepB-CDA-Razavi
+    path /model-documentation/2019/HepB-CDA-Razavi
     allow HepB true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/HepB-IC-Hallett
+    path /model-documentation/2019/HepB-IC-Hallett
     allow HepB true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/HepB-Li
+    path /model-documentation/2019/HepB-Li
     allow HepB true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/HibPCV-JHU-Tam
+    path /model-documentation/2019/HibPCV-JHU-Tam
     allow HibPCV true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/HibPCV-LSHTM-Clark
+    path /model-documentation/2019/HibPCV-LSHTM-Clark
     allow HibPCV true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/JE-OUCRU-Clapham
+    path /model-documentation/2019/JE-OUCRU-Clapham
     allow JE true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/JE-UND-Moore
+    path /model-documentation/2019/JE-UND-Moore
     allow JE true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/Measles-LSHTM-Jit
+    path /model-documentation/2019/Measles-LSHTM-Jit
     allow Measles true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/Measles-PSU-Ferrari
+    path /model-documentation/2019/Measles-PSU-Ferrari
     allow Measles true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/MenA-Cambridge-Trotter
+    path /model-documentation/2019/MenA-Cambridge-Trotter
     allow MenA true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/MenA-KPW-Jackson
+    path /model-documentation/2019/MenA-KPW-Jackson
     allow MenA true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/Rota-Emory-Lopman
+    path /model-documentation/2019/Rota-Emory-Lopman
     allow Rota true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/Rota-LSHTM-Clark
+    path /model-documentation/2019/Rota-LSHTM-Clark
     allow Rota true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/Rubella-JHU-Lessler
+    path /model-documentation/2019/Rubella-JHU-Lessler
     allow Rubella true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/Rubella-PHE-Vynnycky
+    path /model-documentation/2019/Rubella-PHE-Vynnycky
     allow Rubella true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/YF-IC-Garske
+    path /model-documentation/2019/YF-IC-Garske
     allow YF true
     publickey /public_key.pem
 }
 
 jwt {
-    path model-documentation/2019/YF-UND-Perkins
+    path /model-documentation/2019/YF-UND-Perkins
     allow YF true
     publickey /public_key.pem
 }
 
 jwt {
-    path estimate-comparison/201810/HepB
+    path /estimate-comparison/201810/HepB
     allow HepB true
     publickey /public_key.pem
 }
 
 jwt {
-    path estimate-comparison/201810/Hib
+    path /estimate-comparison/201810/Hib
     allow Hib true
     publickey /public_key.pem
 }
 
 jwt {
-    path estimate-comparison/201810/HPV
+    path /estimate-comparison/201810/HPV
     allow HPV true
     publickey /public_key.pem
 }
 
 jwt {
-    path estimate-comparison/201810/JE
+    path /estimate-comparison/201810/JE
     allow JE true
     publickey /public_key.pem
 }
 
 jwt {
-    path estimate-comparison/201810/Measles
+    path /estimate-comparison/201810/Measles
     allow Measles true
     publickey /public_key.pem
 }
 
 jwt {
-    path estimate-comparison/201810/MenA
+    path /estimate-comparison/201810/MenA
     allow MenA true
     publickey /public_key.pem
 }
 
 jwt {
-    path estimate-comparison/201810/PCV
+    path /estimate-comparison/201810/PCV
     allow PCV true
     publickey /public_key.pem
 }
 
 jwt {
-    path estimate-comparison/201810/Rota
+    path /estimate-comparison/201810/Rota
     allow Rota true
     publickey /public_key.pem
 }
 
 jwt {
-    path estimate-comparison/201810/Rubella
+    path /estimate-comparison/201810/Rubella
     allow Rubella true
     publickey /public_key.pem
 }
 
 jwt {
-    path estimate-comparison/201810/YF
+    path /estimate-comparison/201810/YF
     allow YF true
     publickey /public_key.pem
 }

@@ -24,7 +24,7 @@ def model_documentation_2019():
              "Rubella-PHE-Vynnycky",
              "YF-IC-Garske",
              "YF-UND-Perkins"]
-    return {"root": "model-documentation/2019",
+    return {"root": "/model-documentation/2019",
             "paths": [(p, p.split("-", 1)[0]) for p in paths]}
 
 
@@ -39,7 +39,7 @@ def estimate_comparison_201810():
              "Rota",
              "Rubella",
              "YF"]
-    return {"root": "estimate-comparison/201810",
+    return {"root": "/estimate-comparison/201810",
             "paths": [(p, p) for p in paths]}
 
 
