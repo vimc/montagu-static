@@ -17,104 +17,116 @@ jwt {
 
 
 jwt {
-    path /model-documentation/2019/test-group
-    allow test-group true
+    path /model-documentation/2019/HPV-Harvard-Kim
+    allow HPV true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/Cambridge-Trotter
-    allow Cambridge-Trotter true
+    path /model-documentation/2019/HPV-LSHTM-Jit
+    allow HPV true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/CDA-Razavi
-    allow CDA-Razavi true
+    path /model-documentation/2019/HepB-CDA-Razavi
+    allow HepB true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/JHU-Lessler
-    allow JHU-Lessler true
+    path /model-documentation/2019/HepB-IC-Hallett
+    allow HepB true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/LSHTM-Clark
-    allow LSHTM-Clark true
+    path /model-documentation/2019/HepB-Li
+    allow HepB true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/LSHTM-Jit
-    allow LSHTM-Jit true
+    path /model-documentation/2019/HibPCV-JHU-Tam
+    allow Hib true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/UND-Moore
-    allow UND-Moore true
+    path /model-documentation/2019/HibPCV-LSHTM-Clark
+    allow Hib true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/UND-Perkins
-    allow UND-Perkins true
+    path /model-documentation/2019/JE-OUCRU-Clapham
+    allow JE true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/Emory-Lopman
-    allow Emory-Lopman true
+    path /model-documentation/2019/JE-UND-Moore
+    allow JE true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/Harvard-Sweet
-    allow Harvard-Sweet true
+    path /model-documentation/2019/Measles-LSHTM-Jit
+    allow Measles true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/IC-Garske
-    allow IC-Garske true
+    path /model-documentation/2019/Measles-PSU-Ferrari
+    allow Measles true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/IC-Hallett
-    allow IC-Hallett true
+    path /model-documentation/2019/MenA-Cambridge-Trotter
+    allow MenA true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/JHU-Tam
-    allow JHU-Tam true
+    path /model-documentation/2019/MenA-KPW-Jackson
+    allow MenA true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/KPW-Jackson
-    allow KPW-Jackson true
+    path /model-documentation/2019/Rota-Emory-Lopman
+    allow Rota true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/OUCRU-Clapham
-    allow OUCRU-Clapham true
+    path /model-documentation/2019/Rota-LSHTM-Clark
+    allow Rota true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/PHE-Vynnycky
-    allow PHE-Vynnycky true
+    path /model-documentation/2019/Rubella-JHU-Lessler
+    allow Rubella true
     publickey /public_key.pem
 }
 
 jwt {
-    path /model-documentation/2019/PSU-Ferrari
-    allow PSU-Ferrari true
+    path /model-documentation/2019/Rubella-PHE-Vynnycky
+    allow Rubella true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /model-documentation/2019/YF-IC-Garske
+    allow YF true
+    publickey /public_key.pem
+}
+
+jwt {
+    path /model-documentation/2019/YF-UND-Perkins
+    allow YF true
     publickey /public_key.pem
 }
 

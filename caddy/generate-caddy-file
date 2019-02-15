@@ -3,57 +3,65 @@ from mako.template import Template
 from os import chdir
 from os.path import dirname, realpath
 
-model_documentation_groups = ["test-group",
-                              "Cambridge-Trotter",
-                              "CDA-Razavi",
-                              "JHU-Lessler",
-                              "LSHTM-Clark",
-                              "LSHTM-Jit",
-                              "UND-Moore",
-                              "UND-Perkins",
-                              "Emory-Lopman",
-                              "Harvard-Sweet",
-                              "IC-Garske",
-                              "IC-Hallett",
-                              "JHU-Tam",
-                              "KPW-Jackson",
-                              "OUCRU-Clapham",
-                              "PHE-Vynnycky",
-                              "PSU-Ferrari"]
 
-model_documentation_template = """
+def model_documentation_2019():
+    paths = ["HPV-Harvard-Kim",
+             "HPV-LSHTM-Jit",
+             "HepB-CDA-Razavi",
+             "HepB-IC-Hallett",
+             "HepB-Li",
+             "HibPCV-JHU-Tam",
+             "HibPCV-LSHTM-Clark",
+             "JE-OUCRU-Clapham",
+             "JE-UND-Moore",
+             "Measles-LSHTM-Jit",
+             "Measles-PSU-Ferrari",
+             "MenA-Cambridge-Trotter",
+             "MenA-KPW-Jackson",
+             "Rota-Emory-Lopman",
+             "Rota-LSHTM-Clark",
+             "Rubella-JHU-Lessler",
+             "Rubella-PHE-Vynnycky",
+             "YF-IC-Garske",
+             "YF-UND-Perkins"]
+
+    def disease_from_path(p):
+        disease = p.split("-", 1)[0]
+        return "Hib" if disease == "HibPCV" else disease
+
+    return {"root": "/model-documentation/2019",
+            "paths": [(p, disease_from_path(p)) for p in paths]}
+
+
+def estimate_comparison_201810():
+    paths = ["HepB",
+             "Hib",
+             "HPV",
+             "JE",
+             "Measles",
+             "MenA",
+             "PCV",
+             "Rota",
+             "Rubella",
+             "YF"]
+    return {"root": "/estimate-comparison/201810",
+            "paths": [(p, p) for p in paths]}
+
+
+jwt_template = """
 jwt {
-    path /model-documentation/2019/${name}
-    allow ${name} true
+    path ${root}/${path}
+    allow ${claim} true
     publickey /public_key.pem
 }
 """
 
 
-estimate_comparison_diseases = ["HepB",
-                                "Hib",
-                                "HPV",
-                                "JE",
-                                "Measles",
-                                "MenA",
-                                "PCV",
-                                "Rota",
-                                "Rubella",
-                                "YF"]
-
-estimate_comparison_template = """
-jwt {
-    path /estimate-comparison/201810/${name}
-    allow ${name} true
-    publickey /public_key.pem
-}
-"""
-
-
-def expand_template(template, subs):
+def expand_template(subs):
+    template = Template(jwt_template)
     rules = ""
-    for s in subs:
-        rules += Template(template).render(name=s)
+    for path, claim in subs["paths"]:
+        rules += template.render(path=path, claim=claim, root=subs["root"])
     return rules
 
 
@@ -61,10 +69,9 @@ def generate_caddyfile(template_path, target_path):
     print("Templating from {} to {}".format(template_path, target_path))
     with open(template_path, 'r') as f:
         template = Template(f.read())
-    jwt_rules = expand_template(model_documentation_template,
-                                model_documentation_groups) + \
-                expand_template(estimate_comparison_template,
-                                estimate_comparison_diseases)
+    jwt_rules = \
+        expand_template(model_documentation_2019()) + \
+        expand_template(estimate_comparison_201810())
     with open(target_path, 'w') as f:
         f.write(template.render(jwt_rules=jwt_rules))
 
