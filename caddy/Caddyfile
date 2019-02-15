@@ -48,13 +48,13 @@ jwt {
 
 jwt {
     path /model-documentation/2019/HibPCV-JHU-Tam
-    allow HibPCV true
+    allow Hib true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/HibPCV-LSHTM-Clark
-    allow HibPCV true
+    allow Hib true
     publickey /public_key.pem
 }
 

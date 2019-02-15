@@ -24,8 +24,13 @@ def model_documentation_2019():
              "Rubella-PHE-Vynnycky",
              "YF-IC-Garske",
              "YF-UND-Perkins"]
+
+    def disease_from_path(p):
+        disease = p.split("-", 1)[0]
+        return "Hib" if disease == "HibPCV" else disease
+
     return {"root": "/model-documentation/2019",
-            "paths": [(p, p.split("-", 1)[0]) for p in paths]}
+            "paths": [(p, disease_from_path(p)) for p in paths]}
 
 
 def estimate_comparison_201810():
