@@ -51,6 +51,7 @@ def estimate_comparison_201810():
 jwt_template = """
 jwt {
     path ${root}/${path}/
+    deny access_level user
     allow ${claim} true
     publickey /public_key.pem
 }

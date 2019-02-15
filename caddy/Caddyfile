@@ -12,174 +12,203 @@ browse
 
 jwt {
     path /model-documentation/2019/HPV-Harvard-Kim/
+    deny access_level user
     allow HPV true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/HPV-LSHTM-Jit/
+    deny access_level user
     allow HPV true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/HepB-CDA-Razavi/
+    deny access_level user
     allow HepB true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/HepB-IC-Hallett/
+    deny access_level user
     allow HepB true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/HepB-Li/
+    deny access_level user
     allow HepB true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/HibPCV-JHU-Tam/
+    deny access_level user
     allow Hib true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/HibPCV-LSHTM-Clark/
+    deny access_level user
     allow Hib true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/JE-OUCRU-Clapham/
+    deny access_level user
     allow JE true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/JE-UND-Moore/
+    deny access_level user
     allow JE true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/Measles-LSHTM-Jit/
+    deny access_level user
     allow Measles true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/Measles-PSU-Ferrari/
+    deny access_level user
     allow Measles true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/MenA-Cambridge-Trotter/
+    deny access_level user
     allow MenA true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/MenA-KPW-Jackson/
+    deny access_level user
     allow MenA true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/Rota-Emory-Lopman/
+    deny access_level user
     allow Rota true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/Rota-LSHTM-Clark/
+    deny access_level user
     allow Rota true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/Rubella-JHU-Lessler/
+    deny access_level user
     allow Rubella true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/Rubella-PHE-Vynnycky/
+    deny access_level user
     allow Rubella true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/YF-IC-Garske/
+    deny access_level user
     allow YF true
     publickey /public_key.pem
 }
 
 jwt {
     path /model-documentation/2019/YF-UND-Perkins/
+    deny access_level user
     allow YF true
     publickey /public_key.pem
 }
 
 jwt {
     path /estimate-comparison/201810/HepB/
+    deny access_level user
     allow HepB true
     publickey /public_key.pem
 }
 
 jwt {
     path /estimate-comparison/201810/Hib/
+    deny access_level user
     allow Hib true
     publickey /public_key.pem
 }
 
 jwt {
     path /estimate-comparison/201810/HPV/
+    deny access_level user
     allow HPV true
     publickey /public_key.pem
 }
 
 jwt {
     path /estimate-comparison/201810/JE/
+    deny access_level user
     allow JE true
     publickey /public_key.pem
 }
 
 jwt {
     path /estimate-comparison/201810/Measles/
+    deny access_level user
     allow Measles true
     publickey /public_key.pem
 }
 
 jwt {
     path /estimate-comparison/201810/MenA/
+    deny access_level user
     allow MenA true
     publickey /public_key.pem
 }
 
 jwt {
     path /estimate-comparison/201810/PCV/
+    deny access_level user
     allow PCV true
     publickey /public_key.pem
 }
 
 jwt {
     path /estimate-comparison/201810/Rota/
+    deny access_level user
     allow Rota true
     publickey /public_key.pem
 }
 
 jwt {
     path /estimate-comparison/201810/Rubella/
+    deny access_level user
     allow Rubella true
     publickey /public_key.pem
 }
 
 jwt {
     path /estimate-comparison/201810/YF/
+    deny access_level user
     allow YF true
     publickey /public_key.pem
 }
