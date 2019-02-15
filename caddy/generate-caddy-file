@@ -35,7 +35,7 @@ def estimate_comparison_201810():
              "JE",
              "Measles",
              "MenA",
-            "PCV",
+             "PCV",
              "Rota",
              "Rubella",
              "YF"]
@@ -64,8 +64,9 @@ def generate_caddyfile(template_path, target_path):
     print("Templating from {} to {}".format(template_path, target_path))
     with open(template_path, 'r') as f:
         template = Template(f.read())
-    jwt_rules = expand_template(model_documentation_2019()) + \
-                expand_template(estimate_comparison_201810())
+    jwt_rules = \
+        expand_template(model_documentation_2019()) + \
+        expand_template(estimate_comparison_201810())
     with open(target_path, 'w') as f:
         f.write(template.render(jwt_rules=jwt_rules))
 
