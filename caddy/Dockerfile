@@ -36,7 +36,7 @@ RUN VERSION=v${version} PLUGINS=${plugins} /root/build.sh
 #
 # Final stage
 #
-FROM alpine:3.6
+FROM alpine:3.14
 
 LABEL caddy_version="1.0.5"
 
