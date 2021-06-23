@@ -1,0 +1,3 @@
+steps:
+  - label: "Build and push montagu-static image"
+    command: caddy/build.sh
