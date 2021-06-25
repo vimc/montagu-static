@@ -12,8 +12,8 @@ Within `nginx/` run
 ```
 ./build.sh
 export GIT_BRANCH_TAG=$(git symbolic-ref --short HEAD)
-docker pull docker.montagu.dide.ic.ac.uk:5000/montagu-static:${GIT_BRANCH_TAG}
-docker pull docker.montagu.dide.ic.ac.uk:5000/montagu-static-reverse-proxy:${GIT_BRANCH_TAG}
+docker pull vimc/montagu-static:${GIT_BRANCH_TAG}
+docker pull vimc/montagu-static-reverse-proxy:${GIT_BRANCH_TAG}
 docker-compose up --force-recreate
 ```
 

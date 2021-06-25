@@ -1,0 +1,6 @@
+steps:
+  - label: "Build and push montagu-static image"
+    command: buildkite/build-caddy.sh
+
+  - label: "Build and push montagu-static-reverse-proxy image"
+    command: buildkite/build-nginx.sh
