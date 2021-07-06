@@ -1,13 +1,10 @@
-version: '2'
 services:
   static:
     image: vimc/montagu-static:${GIT_BRANCH_TAG}
     volumes:
-      - ./public_key.pem:/public_key.pem
-      - static_volume:/www
+      - ./public_key.pem:/public_key.pem:ro
+    tmpfs: /var/log/caddy
   proxy:
     image: vimc/montagu-static-reverse-proxy:${GIT_BRANCH_TAG}
     ports:
-      - "80:80"
-volumes:
-  static_volume:
+      - 127.0.0.1:80:80
