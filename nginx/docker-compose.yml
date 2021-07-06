@@ -1,3 +1,4 @@
+version: '2'
 services:
   static:
     image: vimc/montagu-static:${GIT_BRANCH_TAG}
