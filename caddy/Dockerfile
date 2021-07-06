@@ -26,22 +26,22 @@
 # installation, and use our own Caddyfile rather than bind mounting
 # one in.
 
-FROM abiosoft/caddy:builder as builder
+FROM nodakai/build-caddy-server as builder
 
-ARG version="0.10.10"
-ARG plugins="jwt"
+ARG version="1.0.5"
+ARG plugins="BTBurke/caddy-jwt"
 
-RUN VERSION=${version} PLUGINS=${plugins} /bin/sh /usr/bin/builder.sh
+RUN VERSION=v${version} PLUGINS=${plugins} /root/build.sh
 
 #
 # Final stage
 #
-FROM alpine:3.6
+FROM alpine:3.14
 
-LABEL caddy_version="0.10.10"
+LABEL caddy_version="1.0.5"
 
 # install caddy
-COPY --from=builder /install/caddy /usr/bin/caddy
+COPY --from=builder /root/caddy /usr/bin/caddy
 
 # validate install
 RUN /usr/bin/caddy -version
